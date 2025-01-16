@@ -56,7 +56,7 @@ if st.button("clear chat"):
 st.session_state.selected_model = st.selectbox("Choose Model to use.", ("Anthropic's Claude", "OpenAI's GPT", "Meta's Llama"))
 
 print("Model is ",st.session_state.selected_model)
-st.title("Victor BOT")
+st.title("Victor Demo BOT")
 
 if st.session_state.selected_model == "OpenAI's GPT":
     model = ChatOpenAI(model="gpt-4o-mini", api_key=openai_api_key)
