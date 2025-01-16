@@ -53,7 +53,7 @@ if st.button("clear chat"):
     st.session_state.memory = []
     st.session_state.chat_memory = []
     
-st.session_state.selected_model = st.selectbox("Choose Model to use.", ("Anthropic's Claude", "OpenAI's GPT", "Meta's Llama"))
+st.session_state.selected_model = st.selectbox("Choose Model to use.", ("Meta's Llama"))
 
 print("Model is ",st.session_state.selected_model)
 st.title("Victor Demo BOT")
